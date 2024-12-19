@@ -6,4 +6,4 @@ from aiogram.filters import Command
 #help commands
 @dp.message(Command("help"))
 async def help_commands(message:Message):
-    await message.answer("Sizga qanday yordam kerak")
+    await message.answer("Botni boshlash uchun /start buyrug'idan foydalaning!")
