@@ -11,6 +11,7 @@ class IsCheckSubChannels(filters.Filter):
         
         for channel in CHANNELS:
             result = await bot.get_chat_member(channel,message.from_user.id)
+            print(result)
             if result.status in ["member","adminstrator","creator"]:
                 return False
         return True
